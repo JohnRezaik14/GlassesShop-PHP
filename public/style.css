@@ -1,0 +1,38 @@
+.card-img-top {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: contain;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+.card-title {
+  height: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 12.5rem;
+}
+.badge {
+  font-size: 0.8rem;
+}
+.rating-stock {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 10rem;
+  }
+  .card-body {
+    height: 11rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+}

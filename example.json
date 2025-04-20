@@ -1,0 +1,72 @@
+[
+  {
+    "id": 17,
+    "PRODUCT_code": "NWTCFV-17",
+    "product_name": "pilot",
+    "Photo": "01.png",
+    "list_price": 14.5,
+    "reorder_level": 10,
+    "Units_In_Stock": 30,
+    "category": "Kontrollkästchen einzuschließen",
+    "CouNtry": "Italy",
+    "Rating": 4.8,
+    "discontinued": 1,
+    "date": "2018-10-28 22:51:15"
+  },
+  {
+    "id": 88,
+    "PRODUCT_code": "NWTCFV-88",
+    "product_name": "ClubMaster",
+    "Photo": "02.png",
+    "list_price": 12.5,
+    "reorder_level": 5,
+    "Units_In_Stock": 15,
+    "category": "sunglasses",
+    "CouNtry": "Italy",
+    "Rating": 5.0,
+    "discontinued": 0,
+    "date": "2018-09-28 22:51:28"
+  },
+  {
+    "id": 89,
+    "PRODUCT_code": "NWTCFV-89",
+    "product_name": "Oval",
+    "Photo": "03.png",
+    "list_price": 10.95,
+    "reorder_level": 5,
+    "Units_In_Stock": 2,
+    "category": "sunglasses",
+    "CouNtry": "USA",
+    "Rating": 4.5,
+    "discontinued": 1,
+    "date": "2018-09-28 22:51:32"
+  },
+  {
+    "id": 90,
+    "PRODUCT_code": "NWTCFV-90",
+    "product_name": "Semi-Rimless",
+    "Photo": "04.png",
+    "list_price": 11.95,
+    "reorder_level": 5,
+    "Units_In_Stock": 15,
+    "category": "sunglasses",
+    "CouNtry": "USA",
+    "Rating": 5.0,
+    "discontinued": 1,
+    "date": "2018-08-28 22:51:37"
+  },
+  {
+    "id": 91,
+    "PRODUCT_code": "NWTCFV-91",
+    "product_name": "Aviator",
+    "Photo": "05.png",
+    "list_price": 11.95,
+    "reorder_level": 10,
+    "Units_In_Stock": 12,
+    "category": "sunglasses",
+    "CouNtry": "France",
+    "Rating": 4.0,
+    "discontinued": 1,
+    "date": "2018-08-28 22:51:42"
+  }
+]

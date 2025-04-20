@@ -1,0 +1,17 @@
+{
+  "name": "johnl/glasses-shop",
+  "description": "Glasses Shop built with PHP and MySQL",
+  "autoload": {
+    "psr-4": {
+      "Johnl\\GlassesShop\\Models\\": "src/models/",
+      "Johnl\\GlassesShop\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "John Rezaik",
+      "email": "johnrezaik@gmail.com"
+    }
+  ],
+  "require": {}
+}
