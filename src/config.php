@@ -4,7 +4,7 @@ return [
     'db'               => [
         'host' => 'localhost',
         'user' => 'root',
-        'pass' => '',
+        'pass' => 'password',
         'name' => 'northwind',
     ],
     'records_per_page' => 5,

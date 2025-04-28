@@ -1,38 +1,111 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
 .card-img-top {
   width: 100%;
-  height: 12.5rem;
+  height: 8rem;
   object-fit: contain;
   background: #f8f9fa;
-  padding: 1rem;
+  padding: 0.75rem;
 }
+
 .card-title {
-  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  text-align: center;
+  height: 2.5rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  -webkit-line-clamp: 2;
 }
+
+.card-text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.card-text .badge {
+  margin-right: 0.5rem;
+}
+
 .card-body {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 12.5rem;
+  justify-content: space-between;
 }
+
+.card-body .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  text-align: center;
+}
+
+.card-body .stock-status {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.card-body .btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.card-body .btn:hover {
+  background: #0056b3;
+}
+
 .badge {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
+
 .rating-stock {
   margin-top: auto;
 }
 
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .card-img-top {
-    height: 10rem;
+    height: 5rem;
   }
   .card-body {
-    height: 11rem;
+    height: 7rem;
   }
   .card-title {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }

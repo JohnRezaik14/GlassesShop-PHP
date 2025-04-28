@@ -30,13 +30,18 @@ class MYSQLHandler implements DbHandler
     }
     public function get_data($fields = [], $start = 0)
     {
-        // sql select fileds/* from items LIMIt start ,RECORDS_PER_PAGE
-        // concat the array of fildes by "," using implode
-        //transfer the query to number array by mysqli_fetch_all
+        $start = max(0, (int) $start);
+
         $table  = "items";
         $select = empty($fields) ? "*" : implode(",", $fields);
-        $query  = "SELECT $select FROM $table LIMIT $start," . $this->config['records_per_page'];
+        $limit  = $this->config['records_per_page'];
+        $query  = "SELECT $select FROM $table LIMIT $start, $limit";
         $result = mysqli_query($this->connection, $query);
+
+        if (! $result) {
+            throw new \Exception("Database query failed: " . mysqli_error($this->connection));
+        }
+
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
     public function get_record_by_id($id, $primary_key = 'id')
@@ -45,5 +50,17 @@ class MYSQLHandler implements DbHandler
         $query  = "SELECT * FROM $table WHERE $primary_key = $id";
         $result = mysqli_query($this->connection, $query);
         return mysqli_fetch_assoc($result);
+    }
+    public function get_total_count()
+    {
+        $query  = "SELECT COUNT(*) as total FROM items";
+        $result = mysqli_query($this->connection, $query);
+
+        if (! $result) {
+            throw new \Exception("Database query failed: " . mysqli_error($this->connection));
+        }
+
+        $row = mysqli_fetch_assoc($result);
+        return (int) $row['total'];
     }
 }
