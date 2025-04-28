@@ -1,4 +1,4 @@
-## Expected Data Output
+## 🎬 Watch Our Latest Video
 
-![Northwind Glasses Products](./image.png)  
-_Sample data from the items table showing 5 glasses products_
+[![Watch the video](https://github.com/JohnRezaik14/GlassesShop-PHP/blob/main/image.png?raw=true)](https://drive.google.com/file/d/1Yp_OifeOmLCKoJzZggBpWAS_TB6oRiWF/view?usp=sharing)
+
